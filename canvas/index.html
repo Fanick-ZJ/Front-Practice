@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+
+<canvas id="canvas"></canvas>
+
+<script type="module">
+    import GridBackgrond from "./GridBackground.js";
+    const canvas = document.getElementById("canvas");
+    canvas.width = Math.floor(window.innerWidth);
+    canvas.height = Math.floor(window.innerHeight);
+    const gridBackground = new GridBackgrond(canvas);
+    gridBackground.draw();
+</script>
     
 </body>
 </html>
